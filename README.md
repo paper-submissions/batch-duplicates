@@ -11,7 +11,7 @@ It is based off [imagenet example in pytorch](https://github.com/pytorch/example
  
  To clone:
  ```
- git clone --recursive https://github.com/eladhoffer/convNet.pytorch
+ git clone --recursive https://github.com/paper-submissions/batch-duplicates
  ```
 
 This code can be used to implement the paper "Increasing batch size through instance repetition improves generalization"
