@@ -1,4 +1,4 @@
-# Augment your batch - PyTorch code
+# "Increasing batch size through instance repetition improves generalization" - PyTorch code
 
 This is a complete training example for Deep Convolutional Networks on various datasets (ImageNet, Cifar10, Cifar100, MNIST).
 
