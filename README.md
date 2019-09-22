@@ -14,12 +14,12 @@ It is based off [imagenet example in pytorch](https://github.com/pytorch/example
  git clone --recursive https://github.com/eladhoffer/convNet.pytorch
  ```
 
-This code can be used to implement the paper "Augment your batch: better training with larger batches"
+This code can be used to implement the paper "Increasing batch size through instance repetition improves generalization"
+For example, training the resnet44 + cutout example in paper:
+ ```
+ python main.py --dataset cifar10 --model resnet --model-config "{'depth': 44}"  --duplicates 40 --cutout -b 64 --epochs 100 --save resnet44_cutout_m-40
+ ```
     
-    For example, training the resnet44 + cutout example in paper:
-    ```
-    python main.py --dataset cifar10 --model resnet --model-config "{'depth': 44}"  --duplicates 40 --cutout -b 64 --epochs 100 --save resnet44_cutout_m-40
-    ```
 ## Dependencies
 
 - [pytorch](<http://www.pytorch.org>)
